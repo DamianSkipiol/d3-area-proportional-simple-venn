@@ -26,7 +26,6 @@ The total population in A is 40, the population of B is 60. The population of A 
 
 Armed with this knowledge, we can plug in 40, 60, 25 into areaPorportionalSimpleVenn and get a good visual. Note that if you multiplied all numbers by the same factor (say 1000 if you asked in supermarket-goers or 1/5 if you asked people in a small coffee shop), the diagram would look identical.
 
-Note: I am a cat person so you would rarely find me in coffee shop A.
 
 Usage
 1. source the d3 library (either download it locally or use an existing copy as shown in the example)
