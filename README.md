@@ -7,7 +7,7 @@ This plugin is designed to be as simple as possible to facilitate its ease of us
 What? Why?
 There are many times where you know a given population of 2 sets as well as the overlap (commonality) between them and want a visual of it. That's where areaPorportionalSimpleVenn comes in. You could do brush up on your college math and derive equations to solve for the distance in between the 2 circles but then you'd realize that it's easier to just have the computer repeatedly calculate the area between the circles until it comes up with an answer that is very close to your own area (overlap).
 
-2 circles are easy. More than 2 circles requires a PhD in Math which I do not posess, (although I am a doctor).
+2 circles are easy. More than 2 circles requires a PhD in Math which I do not posess.
 
 To help us solve this problem, we're taking the information and graphing it on graph paper with circles that are at most 2 units high/wide. 
 
@@ -17,12 +17,12 @@ Because of some of the math dealing with circles, some numbers aren't allowed to
 
 This means you think in terms of your own units. For example if we went into a 2 coffee shop and asked everyone if they own a cat we'd maybe have the following:
 
-# people in the coffee shop A is 40. Those who own a cat = 20
-# people in the coffee shop B is 60. Those who own cat = 5
+ people in the coffee shop A is 40. Those who own a cat = 25
+ people in the coffee shop B is 60. Those who own cat = 25
 
 Say we want to draw a diagram representing this. 
 
-The total population in A is 40, the population of B is 60. The population of A that share something in common with B is 20. The population of B who share something in common with A is 5. So if the circles represented the area of the total population of each, circle A would be slightly smaller than circle B. The question is, how much do they overlap? Because one circle is a different size than the other it's not so simple. We do know the overlap amount should = 25.
+The total population in A is 40, the population of B is 60. The population of A that share something in common with B is 25.So if the circles represented the area of the total population of each, circle A would be slightly smaller than circle B. The question is, how much do they overlap? Because one circle is a different size than the other it's not so simple. We do know the overlap amount should = 25.
 
 Armed with this knowledge, we can plug in 40, 60, 25 into areaPorportionalSimpleVenn and get a good visual. Note that if you multiplied all numbers by the same factor (say 1000 if you asked in supermarket-goers or 1/5 if you asked people in a small coffee shop), the diagram would look identical.
 
