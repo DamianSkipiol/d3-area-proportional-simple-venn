@@ -1,13 +1,16 @@
 d3.areaProportionalVenn = function(color_1, color_2, circle_1_area, circle_2_area, overlap){
 
     function areaProportionalVenn(color_1, color_2, circle_1_area, circle_2_area, overlap){
+
+        try{
+        if (circle_1_area == 0 || circle_2_area == 0 || overlap == 0){
+            return false;
+        }
+
         if (overlap > circle_1_area || overlap > circle_2_area){
             return false;
         }
 
-        if (overlap < 1){
-            overlap = 0.1;
-        }
         //clear the diagram
         var something=d3.select(".venn-diagram").selectAll("svg").remove();
 
@@ -101,7 +104,11 @@ d3.areaProportionalVenn = function(color_1, color_2, circle_1_area, circle_2_are
          .duration(1000)
          .delay(250);
 
-        return areaProportionalVenn;
+        return true;
+
+        }catch (err){
+            //noop
+        }
 
     }
 
@@ -130,6 +137,6 @@ d3.areaProportionalVenn = function(color_1, color_2, circle_1_area, circle_2_are
         return area1 + area2;
     };
 
-return  areaProportionalVenn(color_1, color_2, circle_1_area, circle_2_area, overlap);
+    return  areaProportionalVenn(color_1, color_2, circle_1_area, circle_2_area, overlap);
 
 };
